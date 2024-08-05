@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge is Power</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Knowledge is Power</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+</nav>
+
+<main>
+    <section id="plans">
+        <h2>Future Plans</h2>
+        <p>My next steps after already securing my CompTIA Security+ certification are to get my master's in Cyber Security. In between my university breaks, I plan to obtain the ITIL 4 & Microsoft Certified: Security, Compliance, and Identity Fundamentals certifications.</p>
+        <p>Learn more about <a href="https://www.comptia.org/certifications/security" target="_blank">CompTIA Security+</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Professional Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
