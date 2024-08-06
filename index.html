@@ -30,7 +30,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
         }
-        header h1 {
+        header h1, header img, header nav {
             position: relative;
             z-index: 1;
         }
@@ -40,12 +40,9 @@
             height: 150px;
             object-fit: cover;
             border: 5px solid #fff;
-            position: relative;
-            z-index: 1;
         }
-        nav {
-            margin: 20px 0;
-            text-align: center;
+        header nav {
+            margin-top: 10px;
         }
         nav a {
             text-decoration: none;
@@ -54,6 +51,7 @@
             margin: 0 10px;
             border: 1px solid #333;
             border-radius: 5px;
+            background-color: #fff; /* Background for better visibility */
         }
         nav a:hover {
             background-color: #333;
@@ -79,12 +77,11 @@
 <header>
     <img src="Slack.jpg" alt="Profile Picture">
     <h1>Welcome to My Professional Portfolio</h1>
+    <nav>
+        <a href="about_me.html">About Me</a>
+        <a href="knowledge.html">Knowledge is Power</a>
+    </nav>
 </header>
-
-<nav>
-    <a href="about_me.html">About Me</a>
-    <a href="knowledge.html">Knowledge is Power</a>
-</nav>
 
 <main>
     <section id="introduction">
