@@ -36,8 +36,12 @@
             z-index: 1;
         }
         nav {
-            margin: 20px 0;
-            text-align: center;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
         nav a {
             text-decoration: none;
@@ -46,6 +50,7 @@
             margin: 0 10px;
             border: 1px solid #333;
             border-radius: 5px;
+            background-color: #fff; /* Adding background color for better visibility */
         }
         nav a:hover {
             background-color: #333;
@@ -70,13 +75,12 @@
 
 <header>
     <h1>Knowledge is Power</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="comptia.html">CompTIA Security+</a>
+        <a href="msc_cyber_security.html">MSc Cyber Security</a>
+    </nav>
 </header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="comptia.html">CompTIA Security+</a>
-    <a href="msc_cyber_security.html">MSc Cyber Security</a>
-</nav>
 
 <main>
     <section id="plans">
