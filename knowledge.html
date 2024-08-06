@@ -35,13 +35,25 @@
             position: relative;
             z-index: 1;
         }
-        nav {
+        #home-link {
             position: absolute;
             top: 10px;
             left: 10px;
-            display: flex;
-            justify-content: center;
-            width: 100%;
+        }
+        #home-link a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #fff; /* Background for better visibility */
+        }
+        #home-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        nav {
+            margin: 20px 0;
         }
         nav a {
             text-decoration: none;
@@ -75,8 +87,10 @@
 
 <header>
     <h1>Knowledge is Power</h1>
-    <nav>
+    <div id="home-link">
         <a href="index.html">Home</a>
+    </div>
+    <nav>
         <a href="comptia.html">CompTIA Security+</a>
         <a href="msc_cyber_security.html">MSc Cyber Security</a>
     </nav>
