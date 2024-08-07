@@ -49,9 +49,27 @@
             border-radius: 5px;
             background-color: transparent; /* Transparent background */
             transition: all 0.3s ease; /* Smooth transition for hover effect */
+            display: inline-block; /* To avoid unwanted spacing */
         }
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Slightly visible background on hover */
+            color: #fff;
+        }
+        .header-links {
+            margin-top: 20px;
+        }
+        .header-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #333; /* Border color to match text color */
+            border-radius: 5px;
+            display: inline-block; /* To avoid unwanted spacing */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .header-links a:hover {
+            background-color: #333;
             color: #fff;
         }
         main {
@@ -74,6 +92,12 @@
 <header>
     <nav>
         <a href="msc_cyber_security.html">Back</a>
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="knowledge.html">Knowledge is Power</a>
+            <a href="about_me.html">About Me</a>
+            <a href="msc_cyber_security.html">MSc Cyber Security</a>
+        </div>
     </nav>
     <h1>Launching into Cyber Security 2024</h1>
 </header>
