@@ -37,54 +37,48 @@
         }
         nav {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 2;
+            top: 10px;
+            left: 10px;
+            z-index: 3;
         }
         .menu {
             position: relative;
             display: inline-block;
         }
-        .menu-button {
+        .menu > a {
             text-decoration: none;
-            color: #333; /* Grey color for the menu button */
+            color: #333; /* Same color as the links in other pages */
             padding: 10px;
-            border: 1px solid #333; /* Grey border */
+            border: 1px solid #333; /* Same border color */
             border-radius: 5px;
-            background-color: #fff; /* White background for contrast */
+            background-color: #fff; /* Same background color as other links */
             display: inline-block;
             transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
-        .menu-button:hover {
-            background-color: #333; /* Dark grey background on hover */
-            color: #fff; /* White text on hover */
+        .menu > a:hover {
+            background-color: #333; /* Same hover background color */
+            color: #fff; /* Same hover text color */
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%; /* Position it below the menu button */
+            top: 40px; /* Adjust to position below the menu button */
             left: 0;
-            background-color: #fff; /* White background for dropdown */
-            min-width: 200px; /* Adjust as needed */
+            background-color: #fff;
+            min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            padding: 0;
-            margin: 0;
+            border: 1px solid #333; /* Same border color as menu */
         }
         .dropdown-content a {
+            color: #333; /* Same color as other links */
+            padding: 12px 16px;
             text-decoration: none;
-            color: #333; /* Grey color for dropdown links */
-            padding: 10px;
-            border: 1px solid #333; /* Border color to match other links */
-            border-radius: 5px;
-            display: inline-block;
-            width: calc(50% - 20px); /* Adjust width to fit two items on one line with some margin */
-            margin: 0 10px 10px 0; /* Space between links */
-            box-sizing: border-box; /* Ensure padding and border are included in width */
+            display: block;
+            border-bottom: 1px solid #f4f4f4; /* Border between items */
         }
         .dropdown-content a:hover {
-            background-color: #333; /* Dark grey background on hover */
-            color: #fff; /* White text on hover */
+            background-color: #f4f4f4; /* Same hover background color */
         }
         .menu:hover .dropdown-content {
             display: block;
@@ -102,6 +96,14 @@
             color: #fff;
             margin-top: 20px;
         }
+        .linkedin {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .linkedin img {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -109,7 +111,7 @@
 <header>
     <nav>
         <div class="menu">
-            <a href="#" class="menu-button">Menu</a>
+            <a href="#">Menu</a>
             <div class="dropdown-content">
                 <a href="msc_cyber_security.html">MSc Cyber Security</a>
                 <a href="knowledge.html">Knowledge is Power</a>
