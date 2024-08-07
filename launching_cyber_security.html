@@ -41,37 +41,48 @@
             left: 20px;
             z-index: 2;
         }
-        nav a {
+        .menu {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-button {
             text-decoration: none;
             color: #fff;
             padding: 10px;
             border: 1px solid #fff; /* Border color to match text color */
             border-radius: 5px;
             background-color: transparent; /* Transparent background */
+            display: inline-block;
             transition: all 0.3s ease; /* Smooth transition for hover effect */
-            display: inline-block; /* To avoid unwanted spacing */
         }
-        nav a:hover {
+        .menu-button:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Slightly visible background on hover */
             color: #fff;
         }
-        .nav-center {
-            text-align: center;
-            margin-top: 20px;
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Position it below the menu button */
+            left: 0;
+            background-color: #333; /* Background color */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
-        .nav-center a {
+        .dropdown-content a {
             text-decoration: none;
-            color: #333;
-            padding: 10px;
-            margin: 0 5px;
-            border: 1px solid #333; /* Border color to match text color */
-            border-radius: 5px;
-            display: inline-block; /* To avoid unwanted spacing */
-            transition: all 0.3s ease; /* Smooth transition for hover effect */
-        }
-        .nav-center a:hover {
-            background-color: #333;
             color: #fff;
+            padding: 10px;
+            border: 1px solid #fff; /* Border color to match text color */
+            border-radius: 5px;
+            display: block; /* Make links block elements for better clickability */
+            transition: all 0.3s ease;
+        }
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .menu:hover .dropdown-content {
+            display: block;
         }
         main {
             padding: 20px;
@@ -92,10 +103,14 @@
 
 <header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="knowledge.html">Knowledge is Power</a>
-        <a href="about_me.html">About Me</a>
-        <a href="msc_cyber_security.html">MSc Cyber Security</a>
+        <div class="menu">
+            <a href="#" class="menu-button">Menu</a>
+            <div class="dropdown-content">
+                <a href="msc_cyber_security.html">MSc Cyber Security</a>
+                <a href="knowledge.html">Knowledge is Power</a>
+                <a href="about_me.html">About Me</a>
+            </div>
+        </div>
     </nav>
     <h1>Launching into Cyber Security 2024</h1>
 </header>
