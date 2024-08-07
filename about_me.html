@@ -45,40 +45,40 @@
             position: relative;
             display: inline-block;
         }
-        .menu a {
+        .menu > a {
             text-decoration: none;
-            color: #333;
+            color: #333; /* Same color as the links in other pages */
             padding: 10px;
-            border: 1px solid #333;
+            border: 1px solid #333; /* Same border color */
             border-radius: 5px;
-            background-color: #fff;
+            background-color: #fff; /* Same background color as other links */
             display: inline-block;
             transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
-        .menu a:hover {
-            background-color: #333;
-            color: #fff;
+        .menu > a:hover {
+            background-color: #333; /* Same hover background color */
+            color: #fff; /* Same hover text color */
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 40px; /* Position it below the menu button */
+            top: 40px; /* Adjust to position below the menu button */
             left: 0;
             background-color: #fff;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
+            border: 1px solid #333; /* Same border color as menu */
         }
         .dropdown-content a {
-            color: #333;
+            color: #333; /* Same color as other links */
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            border-bottom: 1px solid #f4f4f4;
-            white-space: nowrap; /* Prevent line breaks within links */
+            border-bottom: 1px solid #f4f4f4; /* Border between items */
         }
         .dropdown-content a:hover {
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Same hover background color */
         }
         .menu:hover .dropdown-content {
             display: block;
