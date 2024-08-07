@@ -62,20 +62,22 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 40px; /* Adjust to position below the menu button */
+            top: 100%; /* Position dropdown below the menu button */
             left: 0;
             background-color: #fff;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border: 1px solid #333; /* Same border color as menu */
+            padding: 0; /* Remove padding to align items */
         }
         .dropdown-content a {
             color: #333; /* Same color as other links */
-            padding: 12px 16px;
+            padding: 10px 15px; /* Adjust padding to align with menu button */
             text-decoration: none;
             display: block;
             border-bottom: 1px solid #f4f4f4; /* Border between items */
+            white-space: nowrap; /* Prevent line breaks within links */
         }
         .dropdown-content a:hover {
             background-color: #f4f4f4; /* Same hover background color */
