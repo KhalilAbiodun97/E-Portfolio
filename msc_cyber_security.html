@@ -21,6 +21,7 @@
             padding: 60px 0;
             text-align: center;
             position: relative;
+            padding-bottom: 80px; /* Extra padding for link */
         }
         header::before {
             content: '';
@@ -36,64 +37,43 @@
             position: relative;
             z-index: 2;
         }
+        .header-link {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .header-link a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #333; /* Border color to match text color */
+            border-radius: 5px;
+            background-color: #fff;
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+            display: inline-block; /* To avoid unwanted spacing */
+        }
+        .header-link a:hover {
+            background-color: #333;
+            color: #fff;
+        }
         nav {
             position: absolute;
             top: 10px;
             left: 10px;
             z-index: 3;
         }
-        .menu {
-            position: relative;
-            display: inline-block;
-        }
-        .menu a {
+        nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             padding: 10px;
-            border: 1px solid #333;
+            border: 1px solid #fff; /* Border color to match text color */
             border-radius: 5px;
-            background-color: #fff;
-            display: block; /* Ensures no spacing around links */
+            background-color: transparent; /* Transparent background */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
-        .menu:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%; /* Ensure dropdown appears right below the menu */
-            left: 0;
-            background-color: #fff;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: #333;
-            padding: 10px 12px;
-            text-decoration: none;
-            border-bottom: 1px solid #f4f4f4;
-            white-space: nowrap; /* Ensure single line */
-        }
-        .dropdown-content a:hover {
-            background-color: #f4f4f4;
-        }
-        .nav-center {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .nav-center a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px;
-            margin: 0 10px;
-            border: 1px solid #333;
-            border-radius: 5px;
-            background-color: #fff;
-            transition: all 0.3s ease;
-        }
-        .nav-center a:hover {
-            background-color: #333;
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly visible background on hover */
             color: #fff;
         }
         main {
@@ -126,11 +106,10 @@
 
 <header>
     <h1>MSc Cyber Security</h1>
+    <div class="header-link">
+        <a href="launching_cyber_security.html">1. Launching into Cyber Security 2024</a>
+    </div>
 </header>
-
-<div class="nav-center">
-    <a href="launching_cyber_security.html">1. Launching into Cyber Security 2024</a>
-</div>
 
 <main>
     <section id="content">
