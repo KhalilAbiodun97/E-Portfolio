@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Launching into Cyber Security 2024</title>
+    <title>About Me</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,43 +45,38 @@
             position: relative;
             display: inline-block;
         }
-        .menu > a {
+        .menu a {
             text-decoration: none;
-            color: #333; /* Same color as the links in other pages */
+            color: #333;
             padding: 10px;
-            border: 1px solid #333; /* Same border color */
+            border: 1px solid #333;
             border-radius: 5px;
-            background-color: #fff; /* Same background color as other links */
+            background-color: #fff;
             display: inline-block;
-            transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
-        .menu > a:hover {
-            background-color: #333; /* Same hover background color */
-            color: #fff; /* Same hover text color */
+        .menu:hover .dropdown-content {
+            display: block;
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 40px; /* Adjust to position below the menu button */
+            top: 40px; /* Adjust as needed */
             left: 0;
             background-color: #fff;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            border: 1px solid #333; /* Same border color as menu */
         }
         .dropdown-content a {
-            color: #333; /* Same color as other links */
+            color: #333;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            border-bottom: 1px solid #f4f4f4; /* Border between items */
+            border-bottom: 1px solid #f4f4f4;
+            white-space: nowrap; /* Prevent line breaks within links */
         }
         .dropdown-content a:hover {
-            background-color: #f4f4f4; /* Same hover background color */
-        }
-        .menu:hover .dropdown-content {
-            display: block;
+            background-color: #f4f4f4;
         }
         main {
             padding: 20px;
@@ -108,31 +103,30 @@
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="menu">
-            <a href="#">Menu</a>
-            <div class="dropdown-content">
-                <a href="msc_cyber_security.html">MSc Cyber Security</a>
-                <a href="knowledge.html">Knowledge is Power</a>
-                <a href="about_me.html">About Me</a>
-            </div>
+<nav>
+    <div class="menu">
+        <a href="#">Menu</a>
+        <div class="dropdown-content">
+            <a href="https://khalilabiodun97.github.io/E-Portfolio/knowledge.html">Knowledge is Power</a>
+            <a href="https://khalilabiodun97.github.io/E-Portfolio/index.html">Home</a>
         </div>
-    </nav>
-    <h1>Launching into Cyber Security 2024</h1>
+    </div>
+</nav>
+
+<header>
+    <h1>About Me</h1>
 </header>
 
 <main>
-    <section id="module-details">
-        <h2>Module Overview</h2>
-        <ul>
-            <li>Understand professional roles, skills, and ethical responsibilities in cybersecurity.</li>
-            <li>Explore computing architectures, practices, and standards.</li>
-            <li>Learn core cybersecurity concepts: cryptography, penetration testing, ethical hacking.</li>
-            <li>Grasp programming concepts for security-based decisions.</li>
-            <li>Implement secure systems using object-oriented principles for web development and system design.</li>
-            <li>Discuss ethical, social, and corporate responsibilities in tech innovations and cybersecurity threats.</li>
-        </ul>
+    <section id="introduction">
+        <h2>About Me</h2>
+        <p>Determined, dynamic and results-driven professional with hands-on experience in information technology and compliance in digital advertising & cyber security industries. Adept at implementing robust security measures and ensuring regulatory compliance in alignment with industry standards. Renowned for delivering exceptional user support, I excel in troubleshooting complex technical issues and fostering collaboration across teams. My expertise extends to cybersecurity, where I am dedicated to safeguarding digital assets and mitigating potential threats through proactive measures. With a proven track record in user management and project execution, I am poised to drive impactful changes and elevate the IT support and cybersecurity landscape within any organization. I have successfully managed IT infrastructure for 500+ users across multiple locations, ensuring optimal performance and connectivity.</p>
+        
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/khalilabiodun/" target="_blank">
+                <img src="Linkedin.png" alt="LinkedIn Profile">
+            </a>
+        </div>
     </section>
 </main>
 
