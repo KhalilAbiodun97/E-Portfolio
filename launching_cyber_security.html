@@ -35,6 +35,25 @@
             position: relative;
             z-index: 1;
         }
+        header nav {
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+        }
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border: 1px solid #333; /* Default border color */
+            border-radius: 5px;
+            background-color: #fff; /* Same background color as Menu button */
+        }
+        header nav a:hover {
+            background-color: #333;
+            color: #fff;
+            border-color: #333; /* Hover border color */
+        }
         nav {
             position: absolute;
             top: 10px;
@@ -45,45 +64,38 @@
             position: relative;
             display: inline-block;
         }
-        .menu > a {
+        .menu a {
             text-decoration: none;
-            color: #333; /* Same color as the links in other pages */
+            color: #333;
             padding: 10px;
-            border: 1px solid #333; /* Same border color */
+            border: 1px solid #333; /* Menu button border color */
             border-radius: 5px;
-            background-color: #fff; /* Same background color as other links */
+            background-color: #fff; /* Same background color as links */
             display: inline-block;
-            transition: all 0.3s ease; /* Smooth transition for hover effect */
         }
-        .menu > a:hover {
-            background-color: #333; /* Same hover background color */
-            color: #fff; /* Same hover text color */
+        .menu:hover .dropdown-content {
+            display: block;
         }
         .dropdown-content {
             display: none;
             position: absolute;
-            top: 100%; /* Position dropdown below the menu button */
+            top: 40px; /* Adjust as needed */
             left: 0;
             background-color: #fff;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            border: 1px solid #333; /* Same border color as menu */
-            padding: 0; /* Remove padding to align items */
         }
         .dropdown-content a {
-            color: #333; /* Same color as other links */
-            padding: 10px 15px; /* Adjust padding to align with menu button */
+            color: #333;
+            padding: 12px 16px;
             text-decoration: none;
             display: block;
-            border-bottom: 1px solid #f4f4f4; /* Border between items */
+            border-bottom: 1px solid #f4f4f4;
             white-space: nowrap; /* Prevent line breaks within links */
         }
         .dropdown-content a:hover {
-            background-color: #f4f4f4; /* Same hover background color */
-        }
-        .menu:hover .dropdown-content {
-            display: block;
+            background-color: #f4f4f4;
         }
         main {
             padding: 20px;
@@ -98,32 +110,43 @@
             color: #fff;
             margin-top: 20px;
         }
-        .linkedin {
+        .uml-heading {
             text-align: center;
-            margin-top: 20px;
-        }
-        .linkedin img {
-            width: 50px;
-            height: 50px;
+            background-color: #f4f4f4;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="menu">
-            <a href="#">Menu</a>
-            <div class="dropdown-content">
-                <a href="msc_cyber_security.html">MSc Cyber Security</a>
-                <a href="knowledge.html">Knowledge is Power</a>
-                <a href="about_me.html">About Me</a>
-                <a href="index.html">Home</a>
-            </div>
+<nav>
+    <div class="menu">
+        <a href="#">Menu</a>
+        <div class="dropdown-content">
+            <a href="msc_cyber_security.html">MSc Cyber Security</a>
+            <a href="knowledge.html">Knowledge is Power</a>
+            <a href="about_me.html">About Me</a>
+            <a href="index.html">Home</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<header>
     <h1>Launching into Cyber Security 2024</h1>
+    <nav>
+        <a href="comptia.html">CompTIA Security+</a>
+        <a href="msc_cyber_security.html">MSc Cyber Security</a>
+    </nav>
 </header>
+
+<!-- UML Diagrams Heading -->
+<div class="uml-heading">
+    <h2>UML Diagrams</h2>
+</div>
 
 <main>
     <section id="module-details">
