@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 6: UML Diagrams for E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Unit 6: UML Diagrams for E-Commerce Site</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="msc_cyber_security.html">MSc Cyber Security</a>
+    <a href="knowledge.html">Knowledge is Power</a>
+    <a href="about_me.html">About Me</a>
+</nav>
+
+<main>
+    <section id="uml-diagrams">
+        <h2>UML Diagrams</h2>
+        <p>In Unit 6, I worked on creating UML diagrams to design an e-commerce shopping site. These diagrams help in visualizing the architecture and behavior of the system. Below are the diagrams I created:</p>
+        
+        <h3>1. Activity Diagram</h3>
+        <img src="activity-diagram.jpg" alt="Activity Diagram for E-Commerce Site">
+        <p>The Activity Diagram represents the workflow of the e-commerce site, from the customer's interaction to the backend processing.</p>
+
+        <h3>2. Class Diagram</h3>
+        <img src="class-diagram.jpg" alt="Class Diagram for E-Commerce Site">
+        <p>The Class Diagram shows the structure of the system in terms of classes and relationships between them. It defines the core components like Customers, Orders, and Products.</p>
+
+        <h3>3. Sequence Diagram</h3>
+        <img src="sequence-diagram.jpg" alt="Sequence Diagram for E-Commerce Site">
+        <p>The Sequence Diagram illustrates the sequence of interactions between the customer and the system, particularly focusing on the order process.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Professional Portfolio. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
